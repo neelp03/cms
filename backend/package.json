@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "npx prisma migrate dev",
+    "generate": "npx prisma generate"
+  },
   "dependencies": {
     "@prisma/client": "^5.21.1",
     "dotenv": "^16.4.5",
