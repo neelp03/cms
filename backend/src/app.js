@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
 
-// Middleware
 app.use(express.json());
 
-// Routes
-const testRoute = require('./routes/test');
-app.use('/api', testRoute);
+// Import and use routes
+const userRoutes = require('./routes/userRoutes');
+app.use('/api/users', userRoutes);
 
-// Export the app
+
 module.exports = app;
